@@ -9,7 +9,7 @@ import os
 
 # Load inventory data
 try:
-    with open("inventory_data.json", "r") as f:
+    with open("./inventory_data.json", "r") as f:
         inventory_data = json.load(f)
 except FileNotFoundError:
     raise FileNotFoundError("The inventory data file 'inventory_data.json' is missing.")
